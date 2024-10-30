@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">greetingCrad</string>
+    <string name="kalimat_penutup">Kalimat Penutup</string>
+    <string name="nama_penerima">Nama Penerima</string>
+    <string name="pesan">Pesan</string>
+    <string name="kalimat_ucapan">Kalimat Ucapan</string>
+</resources>
