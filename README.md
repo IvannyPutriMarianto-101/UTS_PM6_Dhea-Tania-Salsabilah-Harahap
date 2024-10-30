@@ -16,3 +16,6 @@ Aplikasi ini adalah platform pembuatan kartu ucapan digital yang memungkinkan pe
 
 # Link Figma
 https://www.figma.com/design/dirTYFfNxBESaYaJny67oj/UTS-LAB-PM?node-id=0-1&t=R0HrYbTfXIPHwDPv-1
+
+# Credits
+1. Freepik
