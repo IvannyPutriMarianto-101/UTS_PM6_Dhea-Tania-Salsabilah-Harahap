@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".SigninActivity">
     <ImageView
         android:id="@+id/iv_top_border"
         android:layout_width="wrap_content"
@@ -15,55 +14,80 @@
         android:src="@drawable/gambar1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <ImageView
-        android:id="@+id/iv_image_on"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/bro"
-        app:layout_constraintTop_toBottomOf="@id/iv_top_border"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="Make your own greeting card"
+        android:text="Welcome Back!"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_image_on"
-        />
+        app:layout_constraintTop_toBottomOf="@id/iv_top_border" />
 
 
     <TextView
         android:id="@+id/subtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:gravity="center"
-        android:text="Make your own greeting card with a personal touch and heartfelt message for someone special."
+        android:text="Let's Make your own greeting card."
         android:textColor="@color/abu"
         android:textSize="12sp"
-        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title" />
-    <Button
-        android:id="@+id/btn_getstart"
+
+
+    <EditText
+        android:id="@+id/et_your_email"
         android:layout_width="343dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="113dp"
-        android:textSize="16sp"
-        android:backgroundTint="@color/primary"
-        android:text="Get Start"
+        android:layout_height="52dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_edit"
+        android:elevation="1dp"
+        android:hint="Your Email"
+        android:padding="15dp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/subtitle"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+
+
+    <EditText
+        android:id="@+id/et_your_pass"
+        android:layout_width="343dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_edit"
+        android:elevation="1dp"
+        android:hint="Your password"
+        android:padding="15dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_your_email" />
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="343dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/primary"
+        android:text="Sign Up"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_your_pass"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
